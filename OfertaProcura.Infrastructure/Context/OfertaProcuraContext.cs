@@ -26,6 +26,8 @@ namespace OfertaProcura.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            if (optionsBuilder.IsConfigured) return;
+
             optionsBuilder.UseSqlServer(_config.GetConnectionString("oferta_procura"), o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery));
         }
 
