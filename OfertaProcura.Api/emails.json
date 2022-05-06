@@ -1,0 +1,8 @@
+{
+  "EmailTemplates": [
+    {
+      "Template": "1",
+      "ArquivoTemplate": "wwwroot\\email\\email.html"
+    }
+  ]
+}
